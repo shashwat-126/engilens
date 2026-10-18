@@ -1,0 +1,18 @@
+[
+  {
+    "question": "Where is JWT authentication implemented?",
+    "expected_sources": ["src/auth/jwt.service.ts", "src/middleware/auth.ts"]
+  },
+  {
+    "question": "How are access tokens generated?",
+    "expected_sources": ["src/auth/jwt.service.ts"]
+  },
+  {
+    "question": "What does the payment service use Redis for?",
+    "expected_sources": ["docs/architecture.md"]
+  },
+  {
+    "question": "What happens if a request has no authorization header?",
+    "expected_sources": ["src/middleware/auth.ts"]
+  }
+]
