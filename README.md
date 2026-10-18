@@ -189,12 +189,4 @@ frontend/src/
   components/        AuthScreen, Sidebar, ChatView, DocumentsPanel, RepositoriesPanel, DependencyGraphPanel, StatsBar
 ```
 
-## Next steps not covered here
 
-- Swap the BM25 reranker for a real cross-encoder (one function to replace)
-- Run and iterate on the actual `docker compose up` (this environment
-  couldn't run Docker itself)
-- CORS allowlist + JWT revocation before any real deployment
-- Larger GitHub ingestion caps (currently 200 files / 200KB per file,
-  tuned for sandbox-friendliness — raise `MAX_FILES_PER_REPO`/`MAX_FILE_BYTES`
-  in `github.ts`)
